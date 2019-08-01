@@ -9,11 +9,13 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-#you can setup a dropbox account and upload your model 
-#this file is now publicly shared so that our server can also access it
-export_file_url = 'https://www.dropbox.com/s/alyurpnic9afgo0/driver.pth?dl=0'
+#google drive and dropbox can break the files when downloading so we are using a service made by CERN 
+# to allow researchers to upload datsets and models and other files
+
+#you can make an account on zendo https://zenodo.org using your github account
+export_file_url = 'https://zenodo.org/record/3357181/files/driver.pth?download=1'
 #here is the name of the file
-export_file_name = 'export.pkl'
+export_file_name = 'driver'
 
 #we are using the distracted driver model so we set up its class names.
 #make sure the ordering is the same as the order of labels you used in training the model
