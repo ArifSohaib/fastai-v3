@@ -13,7 +13,7 @@ from starlette.staticfiles import StaticFiles
 # to allow researchers to upload datsets and models and other files
 
 #you can make an account on zendo https://zenodo.org using your github account
-export_file_url = 'https://zenodo.org/record/3357181/files/driver.pth?download=1'
+export_file_url = 'https://www.dropbox.com/s/v2v5osbpk4m6i4s/driver?dl=0'
 #here is the name of the file
 export_file_name = 'driver'
 
